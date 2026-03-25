@@ -1,14 +1,15 @@
 <style>
-  .twiza-catalogue { font-family: Georgia, 'Times New Roman', serif; color: #2c2c2c; max-width: 860px; margin: 0 auto; padding: 0 16px; }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
+  .twiza-catalogue { font-family: 'Roboto', sans-serif; color: #2c2c2c; max-width: 860px; margin: 0 auto; padding: 0 16px; }
   .twiza-catalogue * { box-sizing: border-box; }
-  .twiza-section-title { font-family: 'Trebuchet MS', sans-serif; font-size: 1.1em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #6b4f2a; margin: 0 0 18px 0; padding-bottom: 8px; border-bottom: 2px solid #e0d5c7; text-align: center; }
+  .twiza-section-title { font-family: 'Roboto', sans-serif; font-size: 1.1em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #6b4f2a; margin: 0 0 18px 0; padding-bottom: 8px; border-bottom: 2px solid #e0d5c7; text-align: center; }
   .twiza-theme { margin-bottom: 10px; border: 1px solid #e0d5c7; border-radius: 6px; overflow: hidden; }
-  .twiza-theme-header { width: 100% !important; background: #faf6f0 !important; border: none !important; border-radius: 0 !important; padding: 14px 18px !important; margin: 0 !important; display: flex !important; align-items: center; justify-content: space-between; cursor: pointer; text-align: left; font-family: Georgia, serif; font-size: 1em; font-weight: bold; color: #2c2c2c !important; box-shadow: none !important; line-height: 1.4 !important; transition: background 0.15s; }
+  .twiza-theme-header { width: 100% !important; background: #faf6f0 !important; border: none !important; border-radius: 0 !important; padding: 14px 18px !important; margin: 0 !important; display: flex !important; align-items: center; justify-content: space-between; cursor: pointer; text-align: left; font-family: 'Roboto', sans-serif; font-size: 1em; font-weight: bold; color: #2c2c2c !important; box-shadow: none !important; line-height: 1.4 !important; transition: background 0.15s; }
   .twiza-theme-header:hover { background: #f0e9df !important; box-shadow: none !important; }
-  .twiza-theme-header .twiza-count { font-family: 'Trebuchet MS', sans-serif; font-size: 0.76em; font-weight: 600; background: #8b6a3e; color: #fff; padding: 2px 9px; border-radius: 20px; margin-left: auto; margin-right: 12px; flex-shrink: 0; white-space: nowrap; }
+  .twiza-theme-header .twiza-count { font-family: 'Roboto', sans-serif; font-size: 0.76em; font-weight: 600; background: #8b6a3e; color: #fff; padding: 2px 9px; border-radius: 20px; margin-left: auto; margin-right: 12px; flex-shrink: 0; white-space: nowrap; }
   .twiza-theme-header .twiza-arrow { font-size: 0.8em; color: #8b6a3e; transition: transform 0.22s; flex-shrink: 0; }
   .twiza-theme-header.open .twiza-arrow { transform: rotate(180deg); }
-  .twiza-keywords { display: block; font-family: 'Trebuchet MS', sans-serif; font-size: 0.78em; font-weight: 400; font-style: italic; color: #9e8060; margin-top: 2px; }
+  .twiza-keywords { display: block; font-family: 'Roboto', sans-serif; font-size: 0.78em; font-weight: 400; font-style: italic; color: #9e8060; margin-top: 2px; }
   .twiza-theme-body { display: none; padding: 0 18px 14px 18px; background: #fff; }
   .twiza-theme-body.open { display: block; }
   .twiza-formation { padding: 12px 0; border-bottom: 1px solid #f0eae0; }
@@ -16,7 +17,7 @@
   .twiza-formation-name { font-size: 1em; font-weight: bold; margin: 0 0 5px 0; }
   .twiza-formation-name a { color: #5a3e1b; text-decoration: none; }
   .twiza-formation-name a:hover { text-decoration: underline; color: #8b6a3e; }
-  .twiza-dates { font-family: 'Trebuchet MS', sans-serif; font-size: 0.85em; color: #666; margin: 0; }
+  .twiza-dates { font-family: 'Roboto', sans-serif; font-size: 0.85em; color: #666; margin: 0; }
   .twiza-date-line { display: flex; align-items: flex-start; gap: 6px; margin-bottom: 2px; }
   .twiza-date-line .dot { color: #8b6a3e; flex-shrink: 0; }
   @media (max-width: 580px) { .twiza-theme-header { font-size: 0.95em; padding: 12px 12px !important; } .twiza-theme-body { padding: 0 12px 12px 12px; } }
