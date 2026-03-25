@@ -440,14 +440,22 @@
 
 <script>
   function sendHeight() {
-    window.parent.postMessage(
-      { type: 'catalogueHeight', height: document.documentElement.scrollHeight },
-      '*'
-    );
+    var h = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+    window.parent.postMessage({ type: 'catalogueHeight', height: h }, '*');
   }
-  window.addEventListener('load', sendHeight);
+  // Envoie la hauteur au chargement, puis à 300ms et 800ms
+  // pour être sûr que le script WordPress est prêt à écouter
+  window.addEventListener('load', function() {
+    sendHeight();
+    setTimeout(sendHeight, 300);
+    setTimeout(sendHeight, 800);
+  });
+  // À chaque ouverture/fermeture d'accordéon, on attend
+  // que le DOM ait fini de s'animer avant de mesurer
   document.querySelectorAll('details.category').forEach(function(d) {
-    d.addEventListener('toggle', sendHeight);
+    d.addEventListener('toggle', function() {
+      setTimeout(sendHeight, 150);
+    });
   });
 </script>
 </body>
