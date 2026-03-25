@@ -438,5 +438,17 @@
   <a href="https://fr.twiza.org/portail/formations-twiza/" target="_blank" rel="noopener">fr.twiza.org</a>
 </div>
 
+<script>
+  function sendHeight() {
+    window.parent.postMessage(
+      { type: 'catalogueHeight', height: document.documentElement.scrollHeight },
+      '*'
+    );
+  }
+  window.addEventListener('load', sendHeight);
+  document.querySelectorAll('details.category').forEach(function(d) {
+    d.addEventListener('toggle', sendHeight);
+  });
+</script>
 </body>
 </html>
