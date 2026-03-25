@@ -1,0 +1,284 @@
+<style>
+  .twiza-catalogue { font-family: Georgia, 'Times New Roman', serif; color: #2c2c2c; max-width: 860px; margin: 0 auto; padding: 0 16px; }
+  .twiza-catalogue * { box-sizing: border-box; }
+  .twiza-section-title { font-family: 'Trebuchet MS', sans-serif; font-size: 1.1em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #6b4f2a; margin: 0 0 18px 0; padding-bottom: 8px; border-bottom: 2px solid #e0d5c7; text-align: center; }
+  .twiza-theme { margin-bottom: 10px; border: 1px solid #e0d5c7; border-radius: 6px; overflow: hidden; }
+  .twiza-theme-header { width: 100% !important; background: #faf6f0 !important; border: none !important; border-radius: 0 !important; padding: 14px 18px !important; margin: 0 !important; display: flex !important; align-items: center; justify-content: space-between; cursor: pointer; text-align: left; font-family: Georgia, serif; font-size: 1em; font-weight: bold; color: #2c2c2c !important; box-shadow: none !important; line-height: 1.4 !important; transition: background 0.15s; }
+  .twiza-theme-header:hover { background: #f0e9df !important; box-shadow: none !important; }
+  .twiza-theme-header .twiza-count { font-family: 'Trebuchet MS', sans-serif; font-size: 0.76em; font-weight: 600; background: #8b6a3e; color: #fff; padding: 2px 9px; border-radius: 20px; margin-left: auto; margin-right: 12px; flex-shrink: 0; white-space: nowrap; }
+  .twiza-theme-header .twiza-arrow { font-size: 0.8em; color: #8b6a3e; transition: transform 0.22s; flex-shrink: 0; }
+  .twiza-theme-header.open .twiza-arrow { transform: rotate(180deg); }
+  .twiza-keywords { display: block; font-family: 'Trebuchet MS', sans-serif; font-size: 0.78em; font-weight: 400; font-style: italic; color: #9e8060; margin-top: 2px; }
+  .twiza-theme-body { display: none; padding: 0 18px 14px 18px; background: #fff; }
+  .twiza-theme-body.open { display: block; }
+  .twiza-formation { padding: 12px 0; border-bottom: 1px solid #f0eae0; }
+  .twiza-formation:last-child { border-bottom: none; padding-bottom: 0; }
+  .twiza-formation-name { font-size: 1em; font-weight: bold; margin: 0 0 5px 0; }
+  .twiza-formation-name a { color: #5a3e1b; text-decoration: none; }
+  .twiza-formation-name a:hover { text-decoration: underline; color: #8b6a3e; }
+  .twiza-dates { font-family: 'Trebuchet MS', sans-serif; font-size: 0.85em; color: #666; margin: 0; }
+  .twiza-date-line { display: flex; align-items: flex-start; gap: 6px; margin-bottom: 2px; }
+  .twiza-date-line .dot { color: #8b6a3e; flex-shrink: 0; }
+  @media (max-width: 580px) { .twiza-theme-header { font-size: 0.95em; padding: 12px 12px !important; } .twiza-theme-body { padding: 0 12px 12px 12px; } }
+</style>
+
+<div class="twiza-catalogue">
+  <p class="twiza-section-title">🎓 Formations disponibles par thématique</p>
+
+  <!-- ======= 1. CONCEPTION & GESTION DE PROJET ======= -->
+  <div class="twiza-theme">
+    <button class="twiza-theme-header" onclick="twizaToggle(this)">
+      <span>📐 Conception &amp; Gestion de projet<span class="twiza-keywords">Rénovation globale, Maison passive, Autonomie, Confiance en soi</span></span>
+      <span class="twiza-count">3 formations</span>
+      <span class="twiza-arrow">▼</span>
+    </button>
+    <div class="twiza-theme-body">
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/femme-batisseuse-clp/">Femme Bâtisseuse : Construire ou Rénover Autonome et Confiante</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 3 au 31 mars 2026 — distanciel</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/logiciel-phpp/">Aide à la conception énergétique — logiciel PHPP</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 2 et 3 mai 2026 — Bruniquel (82)</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 12 et 13 septembre 2026</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 12 et 13 décembre 2026</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/renovation-ecologique-globale-aj/">Rénovation Écologique Globale</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 31 juillet au 3 août 2026 — Genté (16)</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= 2. ENDUITS & REVÊTEMENTS ======= -->
+  <div class="twiza-theme">
+    <button class="twiza-theme-header" onclick="twizaToggle(this)">
+      <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" style="display:inline-block;vertical-align:middle;margin-right:6px"><path d="M3 20 L9 6 L18 12 L9 22 Z" fill="#c9a87a" stroke="#8b6040" stroke-width="1.5" stroke-linejoin="round"/><path d="M18 12 L23 7" stroke="#6b4a28" stroke-width="2.5" stroke-linecap="round"/></svg>Enduits &amp; Revêtements<span class="twiza-keywords">Chaux, Tadelakt, Terre crue, Finitions minérales</span></span>
+      <span class="twiza-count">7 formations</span>
+      <span class="twiza-arrow">▼</span>
+    </button>
+    <div class="twiza-theme-body">
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/enduits-et-joints-ln/">Joints et Enduits à la Chaux</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 16 au 18 mars 2026 — Saint-Bazile-de-la-Roche (19)</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 19 au 21 octobre 2026</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/enduit-pierre-vue/">Enduit de finition « pierre vue » à la chaux</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 10 et 11 avril 2026 — Lectoure (32)</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/enduit-corps-terre/">Sous-couche et corps d'enduit terre · sable · fibre végétale</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 17 et 18 avril 2026 — Caumont (82)</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/enduits-de-terre-crue-jd/">Enduits terre crue avec Johann</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 8 et 9 mai 2026 — Haussez (76)</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 4 et 5 juillet 2026</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 17 et 18 octobre 2026</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://airtable.com/appe5mJ3IHMjUaCZH/shrs1AyTlaWdJo8DM">Enduits terre crue avec Arno</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 19 et 20 septembre 2026 — Le Glaizil (05)</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 14 et 15 novembre 2026</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/hot-mix-cb/">Hot Mix : Enduits et Mortiers de Chaux Vive</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 29 et 30 juin 2026 — Saint-Bazile-de-la-Roche (19)</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/tadelakt-marocain-bg/">Tadelakt Initiation — 5 jours</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 21 au 25 septembre 2026 — Saint-Étienne-de-Saint-Geoirs (38)</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 16 au 20 novembre 2026</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= 3. BÂTIR EN TERRE ======= -->
+  <div class="twiza-theme">
+    <button class="twiza-theme-header" onclick="twizaToggle(this)">
+      <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" style="display:inline-block;vertical-align:middle;margin-right:6px"><ellipse cx="12" cy="8" rx="7" ry="3.5" fill="#c07040" stroke="#8b4a20" stroke-width="1.2"/><path d="M5 8 Q4 16 8 19 Q12 21 16 19 Q20 16 19 8 Z" fill="#c07040" stroke="#8b4a20" stroke-width="1.2" stroke-linejoin="round"/><ellipse cx="12" cy="8" rx="5" ry="2" fill="#d4895a" opacity="0.5"/></svg>Bâtir en terre<span class="twiza-keywords">Pisé, Adobe, Bauge, Terre crue, Terre d'excavation</span></span>
+      <span class="twiza-count">4 formations</span>
+      <span class="twiza-arrow">▼</span>
+    </button>
+    <div class="twiza-theme-body">
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/enduit-corps-terre/">Sous-couche et corps d'enduit terre · sable · fibre végétale</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 17 et 18 avril 2026 — Caumont (82)</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/enduits-de-terre-crue-jd/">Enduits terre crue avec Johann</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 8 et 9 mai 2026 — Haussez (76)</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 4 et 5 juillet 2026</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 17 et 18 octobre 2026</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://airtable.com/appe5mJ3IHMjUaCZH/shrs1AyTlaWdJo8DM">Enduits terre crue avec Arno</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 19 et 20 septembre 2026 — Le Glaizil (05)</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 14 et 15 novembre 2026</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/terre-dexcavation/">Terre d'Excavation : Révèle le Bâtisseur en Toi</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 16 et 17 mai 2026 — Le Glaizil (05)</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 17 et 18 septembre 2026</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= 4. BÂTI ANCIEN & RÉNOVATION ======= -->
+  <div class="twiza-theme">
+    <button class="twiza-theme-header" onclick="twizaToggle(this)">
+      <span>🏚️ Bâti Ancien &amp; Rénovation<span class="twiza-keywords">Maçonnerie, Pierre, Humidité, Toiture, Rénovation globale</span></span>
+      <span class="twiza-count">9 formations</span>
+      <span class="twiza-arrow">▼</span>
+    </button>
+    <div class="twiza-theme-body">
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/enduits-et-joints-ln/">Joints et Enduits à la Chaux</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 16 au 18 mars 2026 — Saint-Bazile-de-la-Roche (19)</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 19 au 21 octobre 2026</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/enduit-pierre-vue/">Enduit de finition « pierre vue » à la chaux</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 10 et 11 avril 2026 — Lectoure (32)</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/formation-twiza-maconnerie-pierre-et-bati-ancien-jd/">Maçonnerie Traditionnelle &amp; Reprise du Bâti Ancien</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 17 au 19 avril 2026 — Haussez (76)</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 19 au 21 juin 2026</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 18 au 20 septembre 2026</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/murets-pierres-seches-ln/">Pierres sèches : Construire et restaurer des murets</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 20 au 22 avril 2026 — Chartrier-Ferrière (19)</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 14 au 16 septembre 2026</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/formation-twiza-maconnerie-pierre-et-bati-ancien-ln/">Maçonnerie pierre et désordres du bâti ancien</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 27 au 29 mai 2026 — Saint-Bazile-de-la-Roche (19)</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/toiture-detecter-supprimer-fuites/">Toiture : détecter et supprimer les fuites</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 16 et 17 mai 2026 — Ouroux-en-Morvan (58)</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/humidite-bati-ancien-bd/">Humidité Bâti Ancien</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 5 au 19 juin 2026 — distanciel</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Le 9 octobre 2026 — Nantes (44)</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/hot-mix-cb/">Hot Mix : Enduits et Mortiers de Chaux Vive</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 29 et 30 juin 2026 — Saint-Bazile-de-la-Roche (19)</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/renovation-ecologique-globale-aj/">Rénovation Écologique Globale</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 31 juillet au 3 août 2026 — Genté (16)</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= 5. CONSTRUCTION PAILLE ======= -->
+  <div class="twiza-theme">
+    <button class="twiza-theme-header" onclick="twizaToggle(this)">
+      <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" style="display:inline-block;vertical-align:middle;margin-right:6px"><rect x="2" y="6" width="20" height="12" rx="2.5" fill="#e8c460" stroke="#b89020" stroke-width="1.5"/><line x1="2" y1="10.5" x2="22" y2="10.5" stroke="#b89020" stroke-width="1" opacity="0.6"/><line x1="2" y1="14" x2="22" y2="14" stroke="#b89020" stroke-width="1" opacity="0.6"/><line x1="8" y1="6" x2="8" y2="18" stroke="#b89020" stroke-width="1.5" opacity="0.8"/><line x1="16" y1="6" x2="16" y2="18" stroke="#b89020" stroke-width="1.5" opacity="0.8"/></svg>Construction paille<span class="twiza-keywords">GREB, Ossature bois, Isolation paille</span></span>
+      <span class="twiza-count">1 formation</span>
+      <span class="twiza-arrow">▼</span>
+    </button>
+    <div class="twiza-theme-body">
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/construire-en-greb/">Construire en GREB</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 10 au 12 avril 2026 — Caumont (82)</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= 6. ÉNERGIE & AUTONOMIE ======= -->
+  <div class="twiza-theme">
+    <button class="twiza-theme-header" onclick="twizaToggle(this)">
+      <span>⚡ Énergie &amp; Autonomie<span class="twiza-keywords">Eau, Électricité, Chauffage, Passif, PHPP</span></span>
+      <span class="twiza-count">2 formations</span>
+      <span class="twiza-arrow">▼</span>
+    </button>
+    <div class="twiza-theme-body">
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/logiciel-phpp/">Aide à la conception énergétique — logiciel PHPP</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 2 et 3 mai 2026 — Bruniquel (82)</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 12 et 13 septembre 2026</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Les 12 et 13 décembre 2026</span></div>
+        </div>
+      </div>
+      <div class="twiza-formation">
+        <p class="twiza-formation-name"><a target="_blank" rel="noopener" href="https://fr.twiza.org/portail/formations-twiza/autonomie-globale/">Autonomie Globale : Eau, Électricité, Chauffage</a></p>
+        <div class="twiza-dates">
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 6 au 8 juillet 2026 — Maxent (35)</span></div>
+          <div class="twiza-date-line"><span class="dot">•</span><span>Du 2 au 4 novembre 2026</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function twizaToggle(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  document.querySelectorAll('.twiza-theme-body.open').forEach(function(b) {
+    b.classList.remove('open');
+    b.previousElementSibling.classList.remove('open');
+  });
+  if (!isOpen) {
+    body.classList.add('open');
+    btn.classList.add('open');
+  }
+}
+</script>
